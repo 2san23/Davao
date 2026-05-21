@@ -1,0 +1,613 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Davao del Sur Tourism</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#home">
+        <img src="./images/1.png" class="logo me-2" alt="Davao del Sur seal">
+        Davao del Sur
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#culture">Festivals</a></li>
+          <li class="nav-item"><a class="nav-link" href="#food">Food</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tips">Tips</a></li>
+          <li class="nav-item"><a class="nav-link" href="#inquiry">Inquiry</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero-section">
+    <img src="./images/davao.jpg" alt="Davao del Sur mountain and countryside" class="hero-image">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="section-kicker text-white">Province Tourism Website</p>
+      <h1>Davao del Sur</h1>
+      <p class="hero-slogan">Explore Davao del Sur: Discover mountains, beaches, waterfalls, heritage, food, festivals, and adventure.</p>
+      <p class="hero-welcome">Welcome to a province where Mount Apo rises above fertile valleys, coastal towns offer peaceful escapes, and local communities share Mindanao hospitality through culture, food, and nature.</p>
+      <a href="#destinations" class="btn btn-tourism btn-lg">Explore Destinations</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section-pad">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <img src="./images/davao1.jpg" class="feature-photo" alt="Davao del Sur landscape">
+          </div>
+          <div class="col-lg-7 text-start">
+            <p class="section-kicker">About the Province</p>
+            <h2>Davao del Sur at a Glance</h2>
+            <p class="lead-copy">Davao del Sur is located in southeastern Mindanao, Philippines. It is known for the towering Mount Apo, agricultural communities, highland resorts, coastal getaways, and easy access to Davao City's urban attractions.</p>
+            <div class="row g-3 mt-2">
+              <div class="col-md-6"><div class="info-tile"><strong>Location</strong><span>Southern Mindanao, bordered by Davao Gulf and nearby highland areas.</span></div></div>
+              <div class="col-md-6"><div class="info-tile"><strong>Background</strong><span>A province shaped by indigenous heritage, migration, farming, trade, and eco-tourism.</span></div></div>
+              <div class="col-md-6"><div class="info-tile"><strong>Known Attractions</strong><span>Mount Apo, Philippine Eagle Center, Malagos, beaches, gardens, museums, and night markets.</span></div></div>
+              <div class="col-md-6"><div class="info-tile"><strong>Culture</strong><span>Colorful festivals, traditional dances, crafts, cacao products, and warm community celebrations.</span></div></div>
+            </div>
+            <p class="mt-4">Tourists should visit for a balanced trip: nature adventures, relaxing coastal stops, family-friendly parks, food discoveries, and cultural experiences in one accessible destination.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="section-pad section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Tourist Destinations</p>
+          <h2>Find Your Next Stop</h2>
+        </div>
+        <div class="destination-tools row g-3 mb-4">
+          <div class="col-lg-8">
+            <input id="searchInput" type="search" class="form-control form-control-lg" placeholder="Search by destination, municipality/city, or category">
+          </div>
+          <div class="col-lg-4">
+            <select id="categoryFilter" class="form-select form-select-lg" aria-label="Filter destinations by category">
+              <option value="All">All Categories</option>
+              <option value="Beach">Beach</option>
+              <option value="Mountain">Mountain</option>
+              <option value="Waterfall">Waterfall</option>
+              <option value="Historical Site">Historical Site</option>
+              <option value="Island">Island</option>
+              <option value="Food Destination">Food Destination</option>
+              <option value="Adventure">Adventure</option>
+            </select>
+          </div>
+        </div>
+        <div id="destinationCards" class="row g-4">
+          <div class="col-md-6 col-xl-4 destination-item" data-category="Mountain" data-search="mount apo santa cruz digos city mountain">
+            <article class="destination-card h-100">
+              <img src="./images/t2.jpg" alt="Mount Apo">
+              <div class="destination-card-body text-start">
+                <div class="d-flex justify-content-between gap-2 align-items-start mb-2">
+                  <div>
+                    <h3>Mount Apo</h3>
+                    <p class="meta mb-0">Santa Cruz / Digos City</p>
+                  </div>
+                  <span class="badge rounded-pill">Mountain</span>
+                </div>
+                <p>The country's highest peak, popular for trekking, camping, and sunrise views.</p>
+                <ul class="destination-facts">
+                  <li><strong>Entrance:</strong> Guide and permit fees vary by trail</li>
+                  <li><strong>Hours:</strong> By permit and scheduled climb</li>
+                </ul>
+                <button class="btn btn-outline-tourism w-100 view-details" type="button">View Details</button>
+                <div class="destination-details d-none">
+                  <p class="detail-full">Mount Apo is the highest mountain in the Philippines and one of Mindanao's most iconic adventure destinations. Climbers visit for mossy forests, boulder trails, volcanic landscapes, and sweeping views from the summit.</p>
+                  <p class="detail-location">Santa Cruz / Digos City</p>
+                  <p class="detail-activities">Trekking, camping, birdwatching, landscape photography</p>
+                  <p class="detail-best-time">Dry season, especially February to May</p>
+                  <p class="detail-fee">Guide and permit fees vary by trail</p>
+                  <p class="detail-hours">By permit and scheduled climb</p>
+                  <p class="detail-tips">Book an accredited guide, prepare physically, pack warm layers, and follow leave-no-trace rules.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 destination-item" data-category="Adventure" data-search="philippine eagle center davao city adventure">
+            <article class="destination-card h-100">
+              <img src="./images/t1.jpg" alt="Philippine Eagle Center">
+              <div class="destination-card-body text-start">
+                <div class="d-flex justify-content-between gap-2 align-items-start mb-2">
+                  <div>
+                    <h3>Philippine Eagle Center</h3>
+                    <p class="meta mb-0">Davao City</p>
+                  </div>
+                  <span class="badge rounded-pill">Adventure</span>
+                </div>
+                <p>A conservation center for the Philippine eagle and other native wildlife.</p>
+                <ul class="destination-facts">
+                  <li><strong>Entrance:</strong> Entrance fee applies</li>
+                  <li><strong>Hours:</strong> Usually daytime hours</li>
+                </ul>
+                <button class="btn btn-outline-tourism w-100 view-details" type="button">View Details</button>
+                <div class="destination-details d-none">
+                  <p class="detail-full">The Philippine Eagle Center is a learning and conservation destination where visitors can see the critically endangered Philippine eagle and understand the importance of forest protection.</p>
+                  <p class="detail-location">Davao City</p>
+                  <p class="detail-activities">Wildlife viewing, education tours, photography</p>
+                  <p class="detail-best-time">Morning visits for cooler weather</p>
+                  <p class="detail-fee">Entrance fee applies</p>
+                  <p class="detail-hours">Usually daytime hours</p>
+                  <p class="detail-tips">Keep noise low, avoid flash photography near animals, and support conservation programs.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 destination-item" data-category="Food Destination" data-search="malagos garden resort davao city food destination">
+            <article class="destination-card h-100">
+              <img src="./images/t4.webp" alt="Malagos Garden Resort">
+              <div class="destination-card-body text-start">
+                <div class="d-flex justify-content-between gap-2 align-items-start mb-2">
+                  <div>
+                    <h3>Malagos Garden Resort</h3>
+                    <p class="meta mb-0">Davao City</p>
+                  </div>
+                  <span class="badge rounded-pill">Food Destination</span>
+                </div>
+                <p>A garden resort known for cacao, chocolate, nature, and family activities.</p>
+                <ul class="destination-facts">
+                  <li><strong>Entrance:</strong> Entrance and activity fees vary</li>
+                  <li><strong>Hours:</strong> Usually daytime resort hours</li>
+                </ul>
+                <button class="btn btn-outline-tourism w-100 view-details" type="button">View Details</button>
+                <div class="destination-details d-none">
+                  <p class="detail-full">Malagos Garden Resort combines gardens, bird encounters, cacao experiences, and local chocolate products, making it a favorite family and food destination.</p>
+                  <p class="detail-location">Davao City</p>
+                  <p class="detail-activities">Chocolate tasting, garden walks, bird encounters, dining</p>
+                  <p class="detail-best-time">Weekdays or early weekends</p>
+                  <p class="detail-fee">Entrance and activity fees vary</p>
+                  <p class="detail-hours">Usually daytime resort hours</p>
+                  <p class="detail-tips">Try local chocolate products and check package inclusions before visiting.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 destination-item" data-category="Adventure" data-search="davao crocodile park davao city adventure">
+            <article class="destination-card h-100">
+              <img src="./images/t3.jpg" alt="Davao Crocodile Park">
+              <div class="destination-card-body text-start">
+                <div class="d-flex justify-content-between gap-2 align-items-start mb-2">
+                  <div>
+                    <h3>Davao Crocodile Park</h3>
+                    <p class="meta mb-0">Davao City</p>
+                  </div>
+                  <span class="badge rounded-pill">Adventure</span>
+                </div>
+                <p>A wildlife park featuring crocodiles, animal exhibits, and educational shows.</p>
+                <ul class="destination-facts">
+                  <li><strong>Entrance:</strong> Entrance fee applies</li>
+                  <li><strong>Hours:</strong> Usually daytime to early evening</li>
+                </ul>
+                <button class="btn btn-outline-tourism w-100 view-details" type="button">View Details</button>
+                <div class="destination-details d-none">
+                  <p class="detail-full">Davao Crocodile Park is a wildlife attraction where families can learn about crocodiles, reptiles, birds, and other animals through exhibits and scheduled activities.</p>
+                  <p class="detail-location">Davao City</p>
+                  <p class="detail-activities">Animal viewing, educational shows, family tours</p>
+                  <p class="detail-best-time">Late afternoon for cooler weather</p>
+                  <p class="detail-fee">Entrance fee applies</p>
+                  <p class="detail-hours">Usually daytime to early evening</p>
+                  <p class="detail-tips">Check show schedules and supervise children near viewing areas.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 destination-item" data-category="Beach" data-search="dawis beach digos city beach">
+            <article class="destination-card h-100">
+              <img src="./images/b1.jpg" alt="Dawis Beach">
+              <div class="destination-card-body text-start">
+                <div class="d-flex justify-content-between gap-2 align-items-start mb-2">
+                  <div>
+                    <h3>Dawis Beach</h3>
+                    <p class="meta mb-0">Digos City</p>
+                  </div>
+                  <span class="badge rounded-pill">Beach</span>
+                </div>
+                <p>A local coastal spot for simple sea views, walks, and casual relaxation.</p>
+                <ul class="destination-facts">
+                  <li><strong>Entrance:</strong> May vary by area or cottage use</li>
+                  <li><strong>Hours:</strong> Daytime recommended</li>
+                </ul>
+                <button class="btn btn-outline-tourism w-100 view-details" type="button">View Details</button>
+                <div class="destination-details d-none">
+                  <p class="detail-full">Dawis Beach offers a relaxed coastal atmosphere with open views and local seaside charm. It is a good stop for visitors looking for a quiet beachside break.</p>
+                  <p class="detail-location">Digos City</p>
+                  <p class="detail-activities">Beach walks, picnics, sunset viewing</p>
+                  <p class="detail-best-time">Morning or late afternoon</p>
+                  <p class="detail-fee">May vary by area or cottage use</p>
+                  <p class="detail-hours">Daytime recommended</p>
+                  <p class="detail-tips">Bring cash, keep the area clean, and ask locals about safe swimming spots.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 destination-item" data-category="Beach" data-search="talomo beach davao city beach">
+            <article class="destination-card h-100">
+              <img src="./images/b2.jpg" alt="Talomo Beach">
+              <div class="destination-card-body text-start">
+                <div class="d-flex justify-content-between gap-2 align-items-start mb-2">
+                  <div>
+                    <h3>Talomo Beach</h3>
+                    <p class="meta mb-0">Davao City</p>
+                  </div>
+                  <span class="badge rounded-pill">Beach</span>
+                </div>
+                <p>An accessible coastal area with local seafood and laid-back sea views.</p>
+                <ul class="destination-facts">
+                  <li><strong>Entrance:</strong> Depends on resort or access point</li>
+                  <li><strong>Hours:</strong> Varies by establishment</li>
+                </ul>
+                <button class="btn btn-outline-tourism w-100 view-details" type="button">View Details</button>
+                <div class="destination-details d-none">
+                  <p class="detail-full">Talomo Beach is known as an easy coastal escape near the city, suitable for simple seaside meals, quick visits, and relaxed gatherings.</p>
+                  <p class="detail-location">Davao City</p>
+                  <p class="detail-activities">Dining, swimming, coastal sightseeing</p>
+                  <p class="detail-best-time">Weekday mornings or sunset</p>
+                  <p class="detail-fee">Depends on resort or access point</p>
+                  <p class="detail-hours">Varies by establishment</p>
+                  <p class="detail-tips">Confirm entrance rules with your chosen resort or beach area.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 destination-item" data-category="Island" data-search="samal island island garden city of samal island">
+            <article class="destination-card h-100">
+              <img src="./images/b4.jpg" alt="Samal Island">
+              <div class="destination-card-body text-start">
+                <div class="d-flex justify-content-between gap-2 align-items-start mb-2">
+                  <div>
+                    <h3>Samal Island</h3>
+                    <p class="meta mb-0">Island Garden City of Samal</p>
+                  </div>
+                  <span class="badge rounded-pill">Island</span>
+                </div>
+                <p>An island escape near Davao with beaches, resorts, caves, and clear waters.</p>
+                <ul class="destination-facts">
+                  <li><strong>Entrance:</strong> Ferry and resort fees vary</li>
+                  <li><strong>Hours:</strong> Ferry schedules and resort hours vary</li>
+                </ul>
+                <button class="btn btn-outline-tourism w-100 view-details" type="button">View Details</button>
+                <div class="destination-details d-none">
+                  <p class="detail-full">Samal Island is a favorite side trip from Davao for beach resorts, snorkeling, island-hopping, cave visits, and relaxing seaside stays.</p>
+                  <p class="detail-location">Island Garden City of Samal</p>
+                  <p class="detail-activities">Swimming, snorkeling, island hopping, resort stays</p>
+                  <p class="detail-best-time">Dry months and weekdays</p>
+                  <p class="detail-fee">Ferry and resort fees vary</p>
+                  <p class="detail-hours">Ferry schedules and resort hours vary</p>
+                  <p class="detail-tips">Check ferry schedules, bring reef-safe sun protection, and book resorts ahead.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 destination-item" data-category="Historical Site" data-search="japanese tunnel davao city historical site">
+            <article class="destination-card h-100">
+              <img src="./images/t8.jpg" alt="Japanese Tunnel">
+              <div class="destination-card-body text-start">
+                <div class="d-flex justify-content-between gap-2 align-items-start mb-2">
+                  <div>
+                    <h3>Japanese Tunnel</h3>
+                    <p class="meta mb-0">Davao City</p>
+                  </div>
+                  <span class="badge rounded-pill">Historical Site</span>
+                </div>
+                <p>A wartime tunnel attraction connected to local World War II history.</p>
+                <ul class="destination-facts">
+                  <li><strong>Entrance:</strong> Entrance fee may apply</li>
+                  <li><strong>Hours:</strong> Usually daytime visitor hours</li>
+                </ul>
+                <button class="btn btn-outline-tourism w-100 view-details" type="button">View Details</button>
+                <div class="destination-details d-none">
+                  <p class="detail-full">The Japanese Tunnel offers a short historical stop where visitors can learn about wartime stories and see displays connected to Davao's past.</p>
+                  <p class="detail-location">Davao City</p>
+                  <p class="detail-activities">History tour, photo stops, heritage learning</p>
+                  <p class="detail-best-time">Any clear day</p>
+                  <p class="detail-fee">Entrance fee may apply</p>
+                  <p class="detail-hours">Usually daytime visitor hours</p>
+                  <p class="detail-tips">Wear comfortable shoes and listen to guide explanations for context.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 destination-item" data-category="Food Destination" data-search="roxas avenue night market davao city food destination">
+            <article class="destination-card h-100">
+              <img src="./images/t9.jpg" alt="Roxas Avenue Night Market">
+              <div class="destination-card-body text-start">
+                <div class="d-flex justify-content-between gap-2 align-items-start mb-2">
+                  <div>
+                    <h3>Roxas Avenue Night Market</h3>
+                    <p class="meta mb-0">Davao City</p>
+                  </div>
+                  <span class="badge rounded-pill">Food Destination</span>
+                </div>
+                <p>A lively evening destination for street food, snacks, and affordable finds.</p>
+                <ul class="destination-facts">
+                  <li><strong>Entrance:</strong> Free entry; pay for food and items</li>
+                  <li><strong>Hours:</strong> Evening hours</li>
+                </ul>
+                <button class="btn btn-outline-tourism w-100 view-details" type="button">View Details</button>
+                <div class="destination-details d-none">
+                  <p class="detail-full">Roxas Avenue Night Market is popular for grilled food, local snacks, budget shopping, and an energetic evening atmosphere.</p>
+                  <p class="detail-location">Davao City</p>
+                  <p class="detail-activities">Food tasting, shopping, night photography</p>
+                  <p class="detail-best-time">Early evening before the busiest crowd</p>
+                  <p class="detail-fee">Free entry; pay for food and items</p>
+                  <p class="detail-hours">Evening hours</p>
+                  <p class="detail-tips">Keep valuables secure, bring cash, and try small portions from several stalls.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 destination-item" data-category="Historical Site" data-search="people's park davao city historical site">
+            <article class="destination-card h-100">
+              <img src="./images/t5.jpg" alt="People's Park">
+              <div class="destination-card-body text-start">
+                <div class="d-flex justify-content-between gap-2 align-items-start mb-2">
+                  <div>
+                    <h3>People's Park</h3>
+                    <p class="meta mb-0">Davao City</p>
+                  </div>
+                  <span class="badge rounded-pill">Historical Site</span>
+                </div>
+                <p>An urban park with sculptures, gardens, open spaces, and local art.</p>
+                <ul class="destination-facts">
+                  <li><strong>Entrance:</strong> Free entry</li>
+                  <li><strong>Hours:</strong> Usually daytime to evening</li>
+                </ul>
+                <button class="btn btn-outline-tourism w-100 view-details" type="button">View Details</button>
+                <div class="destination-details d-none">
+                  <p class="detail-full">People's Park is a city landmark with landscaped gardens, public art, walking paths, and family-friendly open spaces.</p>
+                  <p class="detail-location">Davao City</p>
+                  <p class="detail-activities">Walking, photography, family leisure</p>
+                  <p class="detail-best-time">Late afternoon</p>
+                  <p class="detail-fee">Free entry</p>
+                  <p class="detail-hours">Usually daytime to evening</p>
+                  <p class="detail-tips">Visit near sunset for cooler weather and softer light.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p id="emptyDestinations" class="empty-state d-none">No destinations match your search.</p>
+      </div>
+    </section>
+
+    <section id="culture" class="section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Festivals and Culture</p>
+          <h2>Celebrations Worth Planning Around</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <article class="content-card">
+              <img src="./images/ft1.jpg" alt="Kadayawan Festival">
+              <div class="card-body text-start">
+                <h3>Kadayawan Festival</h3>
+                <p class="meta">Davao City | August</p>
+                <p>A thanksgiving festival celebrating harvest, indigenous culture, floral abundance, music, dances, and the unity of Davao communities.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="content-card">
+              <img src="./images/ft2.jpg" alt="Araw ng Davao celebration">
+              <div class="card-body text-start">
+                <h3>Araw ng Dabaw</h3>
+                <p class="meta">Davao City | March</p>
+                <p>A city anniversary celebration with parades, cultural showcases, sports events, pageantry, trade fairs, and community performances.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="food" class="section-pad section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Food and Delicacies</p>
+          <h2>Flavors of Davao del Sur</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3"><article class="food-card"><img src="./images/c1.jpg" alt="Durian"><h3>Durian</h3><p>The famous creamy fruit loved for its rich flavor and strong aroma.</p><span>Try it at: Bankerohan Market and local fruit stands</span></article></div>
+          <div class="col-sm-6 col-lg-3"><article class="food-card"><img src="./images/c2.jpg" alt="Cacao chocolate"><h3>Tablea and Cacao</h3><p>Davao cacao is used for hot chocolate, desserts, and award-winning local chocolate.</p><span>Try it at: Malagos and pasalubong shops</span></article></div>
+          <div class="col-sm-6 col-lg-3"><article class="food-card"><img src="./images/c3.jpg" alt="Grilled tuna"><h3>Grilled Tuna</h3><p>Fresh seafood grilled simply and served with local sauces and rice.</p><span>Try it at: Seaside restaurants and night markets</span></article></div>
+          <div class="col-sm-6 col-lg-3"><article class="food-card"><img src="./images/c4.jpg" alt="Kinilaw"><h3>Kinilaw</h3><p>A refreshing Filipino ceviche made with fresh fish, vinegar, ginger, onion, and chili.</p><span>Try it at: Local eateries and seafood restaurants</span></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Gallery</p>
+          <h2>Scenes Around the Province</h2>
+        </div>
+        <div id="galleryGrid" class="gallery-grid">
+          <button class="gallery-item" type="button"><img src="./images/davao.jpg" alt="Davao del Sur hero landscape"><span>Davao del Sur hero landscape</span></button>
+          <button class="gallery-item" type="button"><img src="./images/davao1.jpg" alt="Countryside view"><span>Countryside view</span></button>
+          <button class="gallery-item" type="button"><img src="./images/davao2.jpg" alt="Province scenery"><span>Province scenery</span></button>
+          <button class="gallery-item" type="button"><img src="./images/t1.jpg" alt="Philippine Eagle Center"><span>Philippine Eagle Center</span></button>
+          <button class="gallery-item" type="button"><img src="./images/t2.jpg" alt="Mount Apo"><span>Mount Apo</span></button>
+          <button class="gallery-item" type="button"><img src="./images/t3.jpg" alt="Davao Crocodile Park"><span>Davao Crocodile Park</span></button>
+          <button class="gallery-item" type="button"><img src="./images/t4.webp" alt="Malagos Garden Resort"><span>Malagos Garden Resort</span></button>
+          <button class="gallery-item" type="button"><img src="./images/t5.jpg" alt="People's Park"><span>People's Park</span></button>
+          <button class="gallery-item" type="button"><img src="./images/t6.jpg" alt="D' Bone Collector Museum"><span>D' Bone Collector Museum</span></button>
+          <button class="gallery-item" type="button"><img src="./images/t7.jpg" alt="SM Lanang Premier"><span>SM Lanang Premier</span></button>
+          <button class="gallery-item" type="button"><img src="./images/t8.jpg" alt="Japanese Tunnel"><span>Japanese Tunnel</span></button>
+          <button class="gallery-item" type="button"><img src="./images/t9.jpg" alt="Roxas Avenue Night Market"><span>Roxas Avenue Night Market</span></button>
+          <button class="gallery-item" type="button"><img src="./images/b1.jpg" alt="Dawis Beach"><span>Dawis Beach</span></button>
+          <button class="gallery-item" type="button"><img src="./images/b2.jpg" alt="Talomo Beach"><span>Talomo Beach</span></button>
+          <button class="gallery-item" type="button"><img src="./images/b3.jpg" alt="Kalayaan Beach Resort"><span>Kalayaan Beach Resort</span></button>
+          <button class="gallery-item" type="button"><img src="./images/b4.jpg" alt="Samal Island"><span>Samal Island</span></button>
+          <button class="gallery-item" type="button"><img src="./images/ft1.jpg" alt="Festival celebration"><span>Festival celebration</span></button>
+          <button class="gallery-item" type="button"><img src="./images/ft2.jpg" alt="Cultural parade"><span>Cultural parade</span></button>
+          <button class="gallery-item" type="button"><img src="./images/ft3.jpg" alt="Tradition and dance"><span>Tradition and dance</span></button>
+          <button class="gallery-item" type="button"><img src="./images/ft4.jpg" alt="Community festival"><span>Community festival</span></button>
+          <button class="gallery-item" type="button"><img src="./images/ft5.jpg" alt="Colorful local event"><span>Colorful local event</span></button>
+          <button class="gallery-item" type="button"><img src="./images/c1.jpg" alt="Local fruit"><span>Local fruit</span></button>
+          <button class="gallery-item" type="button"><img src="./images/c2.jpg" alt="Davao cacao"><span>Davao cacao</span></button>
+          <button class="gallery-item" type="button"><img src="./images/c3.jpg" alt="Seafood specialty"><span>Seafood specialty</span></button>
+          <button class="gallery-item" type="button"><img src="./images/c4.jpg" alt="Local delicacy"><span>Local delicacy</span></button>
+          <button class="gallery-item" type="button"><img src="./images/ac1.jpg" alt="Arts and crafts"><span>Arts and crafts</span></button>
+          <button class="gallery-item" type="button"><img src="./images/ac2.jpg" alt="Handmade craft"><span>Handmade craft</span></button>
+          <button class="gallery-item" type="button"><img src="./images/ac3.jpg" alt="Local artistry"><span>Local artistry</span></button>
+          <button class="gallery-item" type="button"><img src="./images/md1.jpg" alt="Music and dance"><span>Music and dance</span></button>
+          <button class="gallery-item" type="button"><img src="./images/ir1.jpg" alt="Indigenous heritage"><span>Indigenous heritage</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips" class="section-pad section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Travel Tips</p>
+          <h2>Before You Go</h2>
+        </div>
+        <div class="row g-3 text-start">
+          <div class="col-md-6 col-lg-4"><div class="tip-box"><strong>Best time to visit</strong><span>Plan outdoor trips during the drier months, usually from December to May.</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="tip-box"><strong>Transportation</strong><span>Use buses, vans, jeepneys, taxis, ride-hailing apps, or arranged tours depending on your route.</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="tip-box"><strong>Safety reminders</strong><span>Check weather, follow local guides, wear proper footwear, and keep emergency contacts ready.</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="tip-box"><strong>Respect culture</strong><span>Ask before taking portraits, dress modestly in communities, and support local vendors.</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="tip-box"><strong>Pack smart</strong><span>Bring water, sun protection, rain gear, cash, insect repellent, and a reusable bag.</span></div></div>
+          <div class="col-md-6 col-lg-4"><div class="tip-box"><strong>Book ahead</strong><span>Reserve mountain climbs, resort stays, and guided activities early during festival season.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="inquiry" class="section-pad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="form-panel text-start">
+              <div class="section-heading text-start mb-4">
+                <p class="section-kicker">Inquiry Form</p>
+                <h2>Plan Your Davao del Sur Trip</h2>
+              </div>
+              <form id="inquiryForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full name</label>
+                    <input type="text" id="fullName" class="form-control" required>
+                    <div class="invalid-feedback">Full name is required.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" id="email" class="form-control" required>
+                    <div class="invalid-feedback">Enter a valid email address.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="contact" class="form-label">Contact number</label>
+                    <input type="text" id="contact" class="form-control" required>
+                    <div class="invalid-feedback">Contact number must contain numbers only.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="selectedDestination" class="form-label">Selected destination</label>
+                    <select id="selectedDestination" class="form-select" required>
+                      <option value="">Choose a destination</option>
+                      <option value="Mount Apo">Mount Apo</option>
+                      <option value="Philippine Eagle Center">Philippine Eagle Center</option>
+                      <option value="Malagos Garden Resort">Malagos Garden Resort</option>
+                      <option value="Davao Crocodile Park">Davao Crocodile Park</option>
+                      <option value="Dawis Beach">Dawis Beach</option>
+                      <option value="Talomo Beach">Talomo Beach</option>
+                      <option value="Samal Island">Samal Island</option>
+                      <option value="Japanese Tunnel">Japanese Tunnel</option>
+                      <option value="Roxas Avenue Night Market">Roxas Avenue Night Market</option>
+                      <option value="People's Park">People's Park</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a destination.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="travelDate" class="form-label">Travel date</label>
+                    <input type="date" id="travelDate" class="form-control" required>
+                    <div class="invalid-feedback">Travel date is required.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="visitors" class="form-label">Number of visitors</label>
+                    <input type="number" id="visitors" class="form-control" min="1" required>
+                    <div class="invalid-feedback">Number of visitors must be at least 1.</div>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-control" rows="5" required></textarea>
+                    <div class="invalid-feedback">Message is required.</div>
+                  </div>
+                  <div class="col-12 d-flex align-items-center gap-3 flex-wrap">
+                    <button class="btn btn-tourism" type="submit">Submit Inquiry</button>
+                    <span id="formSuccess" class="success-message d-none">Your inquiry has been checked and is ready to send.</span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center p-4 custom-footer text-white">
+    <p class="mb-0">Copyright 2026 Province of Davao del Sur Tourism</p>
+  </footer>
+
+  <div class="modal fade" id="destinationModal" tabindex="-1" aria-labelledby="destinationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <p id="destinationModalCategory" class="section-kicker mb-1"></p>
+            <h3 class="modal-title" id="destinationModalLabel"></h3>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="destinationModalBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content gallery-modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="galleryModalLabel">Gallery Preview</h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <button id="prevImage" class="gallery-nav gallery-prev" type="button" aria-label="Previous image">&#8249;</button>
+          <img id="lightboxImage" src="./images/davao.jpg" alt="Gallery preview">
+          <button id="nextImage" class="gallery-nav gallery-next" type="button" aria-label="Next image">&#8250;</button>
+          <p id="lightboxCaption" class="lightbox-caption"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
+
